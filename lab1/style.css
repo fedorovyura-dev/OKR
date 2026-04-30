@@ -150,3 +150,109 @@ h2 + p {
 h2 ~ p {
     font-style: italic;
 }
+
+
+
+
+/* Блоки */
+.position-section {
+    position: relative;
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    background-color: rgba(255, 248, 220, 0.8);
+}
+
+.block {
+    width: 250px;
+    min-height: 120px;
+    background-color: #f5deb3;
+    border: 2px solid #8b4513;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* position */
+.static-box {
+    position: static;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #ffe4c4;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 35px;
+    right: 800px;
+    background-color: #deb887;
+}
+
+/* float */
+.float-left {
+    float: left;
+    width: 220px;
+    background-color: #fff3cd;
+    border: 2px solid #a0522d;
+    padding: 15px;
+    margin: 10px;
+}
+
+.float-right {
+    float: right;
+    width: 220px;
+    background-color: #f0e6d2;
+    border: 2px solid #a0522d;
+    padding: 15px;
+    margin: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* span */
+.highlight {
+    color: #8b4513;
+    font-weight: bold;
+    background-color: #fff3cd;
+}
+
+/* псевдокласи посилань */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+/* first-child */
+.course-list li:first-child {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* псевдоелементи */
+.lab5-title::before {
+    content: "📘 ";
+}
+
+.lab5-title::after {
+    content: " :)";
+}
